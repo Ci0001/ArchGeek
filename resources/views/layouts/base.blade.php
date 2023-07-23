@@ -11,10 +11,10 @@
     <title>
         {{ isset($title) ? $title.' | ' : '' }}
         {{ config('app.name') }}
-        {{ is_active('home') ? '- The Laravel Community Portal' : '' }}
+        {{ is_active('home') ? '- Alternative to ArchWiki' : '' }}
     </title>
 
-    <meta name="description" content="The Laravel portal for problem solving, knowledge sharing and community building." />
+    {{-- <meta name="description" content="The Laravel portal for problem solving, knowledge sharing and community building." /> --}}
     <link rel="canonical" href="{{ $canonical ?? Request::url() }}" />
 
     @vite(['resources/css/app.css'])
