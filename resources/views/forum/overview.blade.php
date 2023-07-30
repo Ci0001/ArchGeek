@@ -52,8 +52,6 @@
                 </div>
 
                 <div class="pt-2 lg:hidden">
-                    @include('layouts._ads._forum_sidebar')
-
                     <div class="flex justify-center mt-6">
                         <x-buttons.dark-cta>
                             <x-heroicon-s-rss class="w-6 h-6 mr-2" />
@@ -99,7 +97,7 @@
 
                 <section class="mt-8 mb-5 lg:mb-32">
                     <div class="flex flex-col gap-y-4">
-                        <x-ads.top-text />
+                    
 
                         @foreach ($threads as $thread)
                             <x-threads.overview-summary :thread="$thread" />
@@ -114,7 +112,6 @@
 
             <div class="lg:w-1/4">
                 <div class="hidden lg:block">
-                    @include('layouts._ads._forum_sidebar')
                 </div>
 
                 <div class="bg-white shadow rounded-md mt-6">
