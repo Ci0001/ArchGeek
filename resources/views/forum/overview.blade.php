@@ -114,50 +114,7 @@
                 <div class="hidden lg:block">
                 </div>
 
-                <div class="bg-white shadow rounded-md mt-6">
-                    <h3 class="text-xl font-semibold px-5 pt-5">
-                        Thanks to our community
-                    </h3>
-
-                    <ul>
-                        @foreach ($topMembers as $member)
-                            <li class="{{ ! $loop->last ? 'border-b ' : '' }}pb-3 pt-5">
-                                <div class="flex justify-between items-center px-5">
-                                    <div class="flex items-center gap-x-5">
-                                        <x-avatar :user="$member" class="w-10 h-10" />
-
-                                        <span class="flex flex-col">
-                                            <a href="{{ route('profile', $member->username()) }}" class="hover:underline">
-                                                <span class="text-gray-900 font-medium">
-                                                    {{ $member->username() }}
-                                                </span>
-                                            </a>
-
-                                            <span class="text-gray-700">
-                                                {{ $member->solutions_count }} {{ Str::plural('Solution', $member->solutions_count) }}
-                                            </span>
-                                        </span>
-                                    </div>
-
-                                    <div>
-                                        <span class="flex items-center gap-x-3 text-lio-500">
-                                            <span class="text-xl font-medium">
-                                                {{ $loop->iteration }}
-                                            </span>
-
-                                            <x-icon-trophy class="w-6 h-6" />
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                        @endforeach
-                    </ul>
-
-                    <p class="px-5 pt-3 pb-5 text-center text-xs text-gray-700">
-                        Solutions given in the past year. Excluding solutions from thread authors.
-                    </p>
-                </div>
-
+            
                 <div class="mt-6">
                     <x-moderators :moderators="$moderators" />
                 </div>
