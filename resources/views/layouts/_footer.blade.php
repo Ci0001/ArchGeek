@@ -14,7 +14,7 @@
                 <div class="lg:w-full lg:flex lg:justify-between">
                     <div class="grow mb-6 lg:mb-0">
                         <p class="text-lg mb-4 lg:mb-6">
-                            Laravel.io
+                            ArchGeek
                         </p>
 
                         <div class="flex flex-wrap lg:flex-col lg:flex-no-wrap">
