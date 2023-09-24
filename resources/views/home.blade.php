@@ -18,8 +18,7 @@
 
                     <div class="mb-5">
                         <p class="text-gray-800 text-lg leading-8 font-medium">
-                            The Laravel portal for problem solving, knowledge sharing and community building.
-                            Join <x-accent-text>{{ $totalUsers }}</x-accent-text> other artisans.
+                            The Laravel based web-portal for problem solving, knowledge sharing and community building related to Arch linux.
                         </p>
                     </div>
 
@@ -149,25 +148,5 @@
     </section>
     <!-- /Help others -->
 
-    <!-- Laravel.io in numbers -->
-    <section class="mt-12 container mx-auto px-4 lg:mt-40 lg:px-16">
-        <h2 class="text-4xl leading-tight font-bold text-center text-gray-900 mb-6 lg:mb-12">
-            Laravel.io in numbers
-        </h2>
 
-        <div class="flex flex-col lg:mb-10 lg:flex-row lg:gap-x-8">
-            <div class="w-full">
-                <x-number-block title="Users" :total="$totalUsers" :background="asset('images/users.png')" />
-            </div>
-
-            <div class="w-full">
-                <x-number-block title="Threads" :total="$totalThreads" :background="asset('images/threads.png')" />
-            </div>
-
-            <div class="w-full">
-                <x-number-block title="Replies" :total="$totalReplies" :background="asset('images/replies.png')" />
-            </div>
-        </div>
-    </section>
-    <!-- /Laravel.io in numbers -->
 @endsection

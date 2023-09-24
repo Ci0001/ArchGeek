@@ -38,12 +38,6 @@
                             </li>
 
                             <li class="rounded lg:mb-0 lg:hover:bg-gray-100">
-                                <a href="https://paste.laravel.io" class="inline-block w-full px-2 py-1">
-                                    Pastebin
-                                </a>
-                            </li>
-
-                            <li class="rounded lg:mb-0 lg:hover:bg-gray-100">
                                 <div @click.outside="community = false" class="relative">
                                     <button @click="community = !community" class="flex items-center lg:mb-0 py-1 px-2">
                                         Community
@@ -57,6 +51,13 @@
                                                 <a href="https://github.com/archlinux" class="inline-block w-full lg:px-4 lg:py-3">
                                                     <x-icon-github class="w-4 h-4 inline"/>
                                                     Github
+                                                </a>
+                                            </li>
+
+                                            <li class="my-4 lg:hover:bg-gray-100 lg:my-0">
+                                                <a href="https://gitlab.com/archlinux" class="inline-block w-full lg:px-4 lg:py-3">
+                                                    <x-icon-github class="w-4 h-4 inline"/>
+                                                    Gitlab
                                                 </a>
                                             </li>
 

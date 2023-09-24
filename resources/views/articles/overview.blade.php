@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="pt-2 lg:hidden">
-                    @include('layouts._ads._forum_sidebar')
+                    
 
                     <div class="flex gap-x-4 mt-10">
                         <div class="w-1/2">
@@ -137,7 +137,7 @@
 
             <div class="lg:w-1/4">
                 <div class="hidden lg:block">
-                    @include('layouts._ads._forum_sidebar')
+                    
                 </div>
 
                 <div class="bg-white shadow rounded-md mt-6">
