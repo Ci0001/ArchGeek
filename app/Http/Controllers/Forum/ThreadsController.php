@@ -34,7 +34,7 @@ class ThreadsController extends Controller
 
     public function __construct()
     {
-        $this->middleware([Authenticate::class, EnsureEmailIsVerified::class], ['except' => ['overview', 'show']]);
+        $this->middleware([Authenticate::class], ['except' => ['overview', 'show']]);
     }
 
     public function overview()

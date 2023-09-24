@@ -11,7 +11,7 @@ class AuthoredArticles extends Controller
 {
     public function __construct()
     {
-        $this->middleware([Authenticate::class, EnsureEmailIsVerified::class]);
+        $this->middleware([Authenticate::class]);
     }
 
     public function __invoke(Request $request)

@@ -27,7 +27,7 @@ class ArticlesController extends Controller
 
     public function __construct()
     {
-        $this->middleware([Authenticate::class, EnsureEmailIsVerified::class], ['except' => ['index', 'show']]);
+        $this->middleware([Authenticate::class], ['except' => ['index', 'show']]);
     }
 
     public function index(Request $request)
