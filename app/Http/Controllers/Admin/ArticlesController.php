@@ -36,7 +36,7 @@ class ArticlesController extends Controller
     {
         $this->authorize(ArticlePolicy::APPROVE, $article);
 
-        $this->dispatchSync(new ApproveArticle($article));
+        // $this->dispatchSync(new ApproveArticle($article));
 
         $this->success('admin.articles.approved', $article->title());
 
@@ -47,7 +47,7 @@ class ArticlesController extends Controller
     {
         $this->authorize(ArticlePolicy::DISAPPROVE, $article);
 
-        $this->dispatchSync(new DisapproveArticle($article));
+        // $this->dispatchSync(new DisapproveArticle($article));
 
         $this->success('admin.articles.disapproved', $article->title());
 
